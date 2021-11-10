@@ -15,8 +15,9 @@
 const fs = require('fs');
 const path = require('path');
 
-let folder = '../03-files-in-folder/secret-folder';
-folder = path.basename('./03-files-in-folder/secret-folder');
+let folder = path.join(__dirname, 'secret-folder');
+//let folder = '../03-files-in-folder/secret-folder';
+//folder = path.basename('./03-files-in-folder/secret-folder');
 fs.readdir(folder, (err, files) => {
 
   if (err) {

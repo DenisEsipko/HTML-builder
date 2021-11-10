@@ -14,7 +14,7 @@ const {mkdir } = require('fs/promises');
 // nameFolderClear - название папки с которым мы работаем
 const clearFolder = async (nameDirClear) => {
   //удаляем
-  await fs.rm(nameDirClear, { recursive: true });
+ // await fs.rm(nameDirClear, { recursive: true });
   //создаем
   await mkdir(nameDirClear, { recursive: true });
 };
